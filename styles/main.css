@@ -1,0 +1,51 @@
+html, body{
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.5;
+}
+
+.menu-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.menu-left a {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.menu-right a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.menu-bar a:hover {
+  background-color: black; 
+  color: white;
+  font-weight: bold;
+} 
+
+
+.intro{
+  margin-top: 10rem;
+  line-height: 2;
+}
+header{
+  text-align: left;
+}
+
+#myphoto{
+  width: 65%;
+  align-items: center;
+}
+
+.highlight{
+  background-color: black;
+  color:white;
+  font-weight: bold;
+}
