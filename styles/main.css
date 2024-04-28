@@ -74,7 +74,7 @@ html, body{
 }
 
 .mobile-menu-icon img {
-  width: 10%;
+  width: 13%;
   height: auto;
   cursor: pointer;
   display: block;
@@ -123,7 +123,21 @@ footer{
   width: 100%;
 }
 
+.social-icons {
+  text-align: center; /* 中心对齐图标 */
+  padding: 20px; /* 添加一些内边距 */
+}
 
+.social-icon {
+  margin: 0 10px; /* 图标之间的间距 */
+  font-size: 24px; /* 图标大小 */
+  color: black; /* 图标颜色 */
+  text-decoration: none; /* 去掉下划线 */
+}
+
+.social-icon:hover {
+  color: #555; /* 鼠标悬浮时的颜色变化 */
+}
 
 
 
