@@ -7,6 +7,8 @@
   <meta name="description" content="Welcome to my journalism world!">
   <link rel="stylesheet" href="./styles/main.css">
   <link rel="stylesheet" href="./styles/simple-grid.css">
+  <link rel="icon" href="assets/IMG_5029.png">
+  <script src="script/main.js" defer></script>
 </head>
 
 <body>
@@ -16,28 +18,72 @@
         <header id="header">
           <nav class="menu-bar">
             <div class="menu-left">
-              <a href="index.html">Iris Qiu</a>
+              <h1><a href="index.html">Iris Qiu</a></h1>
             </div>
-            <div class="menu-right">
+            <div class="menu-right desktop-menu">
                 <a href="#data">Data Work</a>
                 <a href="#bylines">Bylines</a>
-                <a href="#resume">Resume</a>
+                <a href="https://drive.google.com/file/d/1P5fNOSdojFUACwK45NzhABDMXd8mPkAi/view?usp=sharing" target="_blank">Resume</a>
             </div>
+          <div class="mobile-menu-icon">
+            <img src="assets/burger-list-menu-navigation.svg" alt="menu bar icon">
+          </div>
         </nav>
-          <div class="intro">
-            <div class="col-6">
-              <img id="myphoto" src="assets/head_photo.jpg" alt="my photos">
-            </div>
-            <div class="col-6">
-              <p>Hello, I am Iris Qiu.</p>
-              <p>I am now studying data journalism at UC Berkeley Graduate School of Journalism.</p>
-              <p>I enjoy using <span class="highlight">data</span>, <span class="highlight">code</span>, and <span class="highlight">graphics</span> to tell impactful stories.</p>
-            </div>
+          <div class="nav-overlay">
+            <nav class="dropdown menu">
+              <a href="#data">Data Work</a>
+              <a href="#bylines">Bylines</a>
+              <a href="#resume">Resume</a>
+            </nav>
           </div>
         </header>
-        
       </div>
     </div>
+    <div class="row">
+      <div class="col-12">
+        <header class="intro">
+          <div class="col-6">
+            <img id="myphoto" src="assets/head_photo.jpg" alt="my photos">
+          </div>
+          <div class="col-6">
+            <p>Hello, I am Iris Qiu.</p>
+            <p>I am now studying data journalism at UC Berkeley Graduate School of Journalism.</p>
+            <p>I enjoy using <span class="highlight">data</span>, <span class="highlight">code</span>, and <span class="highlight">graphics</span> to tell impactful stories.</p>
+          </div>
+        </header>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <section id="data">
+          <h2>Data Work</h2>
+          <p></p>
+          <p>my work</p>
+        </section>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <section id="bylines">
+          <h2>Bylines</h2>
+          <p>my work</p>
+          <figure>
+            <img />
+            <figcaption></figcaption>
+          </figure>
+          
+        </section>
+      </div>
+    </div>
+
+  
+   
   </div>    
 </body>
+<hr>
+<footer>
+  <p>© 2024 - Iris Qiu</p>
+</footer>
 </html>

@@ -1,6 +1,7 @@
 html, body{
   font-family: 'Courier New', Courier, monospace;
   line-height: 1.5;
+  background-color: white;
 }
 
 .menu-bar {
@@ -11,10 +12,12 @@ html, body{
 }
 
 .menu-left a {
-    font-size: 20px;
     font-weight: bold;
     color: black;
     text-decoration: none;
+    white-space: nowrap; /* 防止文本换行 */
+    overflow: hidden; /* 防止内容溢出 */
+    text-overflow: ellipsis;
 }
 
 .menu-right a {
@@ -30,6 +33,62 @@ html, body{
   font-weight: bold;
 } 
 
+.desktop-menu {
+  display: none; /* 默认不显示 */
+}
+
+#header {
+  position: relative; /* 这样 .nav-overlay 将相对于这个元素定位 */
+}
+
+
+.nav-overlay {
+  display: block;
+  overflow: hidden;
+  max-height: 0; /* 开始时不显示任何内容 */
+  transition: max-height 0.5s ease; /* 平滑过渡效果 */
+  width: 100%; /* 根据需要调整宽度 */
+  background-color: white; /* 背景颜色 */
+  color: black;
+  position: absolute; /* 或 fixed，取决于具体布局 */
+  top: 100%; /* 紧跟在菜单栏下方 */
+  left: 0;
+  z-index: 1000;
+}
+
+/* 为展开状态设置一个足够大的 max-height 值 */
+.nav-overlay.open {
+  max-height: 500px; /* 足够覆盖所有菜单项，根据实际内容调整 */
+}
+
+.nav-overlay .menu a {
+  display: block;
+  padding: 10px 20px; /* 增加适当的内边距 */
+  text-decoration: none;
+  background-color: black; /* 背景颜色为白色 */
+  transition: background-color 0.3s, color 0.3s; /* 平滑过渡效果 */
+}
+
+.nav-overlay.open {
+  max-height: 100vh; /* 使用视窗高度而不是计算值确保完全覆盖 */
+}
+
+.mobile-menu-icon img {
+  width: 10%;
+  height: auto;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+}
+
+.nav-overlay .menu a {
+  display: block;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px; /* 调整字体大小 */
+}
 
 .intro{
   margin-top: 10rem;
@@ -49,3 +108,48 @@ header{
   color:white;
   font-weight: bold;
 }
+
+h2{
+  text-align: center;
+
+  margin-top: 10rem;
+}
+
+footer{
+  text-align: center;
+}
+
+.header, .menu-bar, .nav-overlay {
+  width: 100%;
+}
+
+
+
+
+
+
+/* 媒体查询，为桌面视图增加样式 */
+@media (min-width: 768px) {
+  #header {
+    position: relative; /* 使 .nav-overlay 能够相对于这个容器定位 */
+}
+  .nav-overlay {
+    display: none;
+    position: absolute; /* 改为绝对定位，不覆盖整个屏幕 */
+    top: 100%; /* 从头部导航栏底部开始显示 */
+    left: 0;
+    width: 100%; /* 仍然占满整个容器宽度 */
+    height: auto; /* 高度为内容高度，不再是 100% */
+    background-color: rgba(0, 0, 0, 0.7); /* 可以适当调整透明度 */
+}
+  .desktop-menu {
+      display: block; /* 在桌面视图显示全尺寸菜单 */
+  }
+  .mobile-menu-icon {
+      display: none; /* 在桌面视图隐藏移动菜单图标 */
+  }
+  .nav-overlay {
+      display: none; /* 在桌面视图隐藏全屏下拉菜单 */
+  }
+}
+
