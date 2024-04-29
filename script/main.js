@@ -5,13 +5,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
   menuIcon.addEventListener('click', function() {
       if (navOverlay.classList.contains('open')) {
-          navOverlay.classList.remove('open'); // 关闭菜单
+          navOverlay.classList.remove('open'); 
       } else {
-          navOverlay.classList.add('open'); // 打开菜单
+          navOverlay.classList.add('open'); 
       }
   });
 
-  // 可选: 点击菜单项也关闭菜单
+  
   navOverlay.querySelectorAll('.menu a').forEach(function(item) {
       item.addEventListener('click', function() {
           navOverlay.classList.remove('open');

@@ -34,7 +34,7 @@ html, body{
 } 
 
 .desktop-menu {
-  display: none; /* 默认不显示 */
+  display: none; 
 }
 
 #header {
@@ -50,7 +50,7 @@ html, body{
   width: 100%; /* 根据需要调整宽度 */
   background-color: white; /* 背景颜色 */
   color: black;
-  position: absolute; /* 或 fixed，取决于具体布局 */
+  position: absolute; 
   top: 100%; /* 紧跟在菜单栏下方 */
   left: 0;
   z-index: 1000;
@@ -87,7 +87,7 @@ html, body{
   padding: 10px;
   text-decoration: none;
   text-align: center;
-  font-size: 16px; /* 调整字体大小 */
+  font-size: 16px; 
 }
 
 .intro{
