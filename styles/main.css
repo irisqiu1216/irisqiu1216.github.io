@@ -134,7 +134,7 @@ header{
 h2{
   text-align: center;
   margin-top: 7rem;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 #data{
   margin: 0;
@@ -208,6 +208,9 @@ figure{
   transform:rotate(-1deg);
   /* opacity:0.5; */
   border-radius:0.25em;
+}
+.story{
+  margin-bottom: 2rem;
 }
 
 footer{
