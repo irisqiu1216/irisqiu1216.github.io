@@ -146,6 +146,12 @@ figure{
 .images{
   width:100%;
   height: auto;
+  transition: transform 0.3s ease-in-out; 
+  transform-origin: center; 
+}
+
+.images:hover {
+  transform: scale(1.1); 
 }
 
 .headlines{
@@ -156,6 +162,7 @@ figure{
   font-variation-settings:
     "wdth" 100;
   font-size: 26px;
+  margin: 0;
 }
 
 .headlines a{
@@ -168,7 +175,9 @@ figure{
   color: white;
 }
 .description{
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style:normal;
 }
 .sketch-highlight{
   position:relative;
@@ -213,42 +222,19 @@ figure{
   margin-bottom: 2rem;
 }
 
-.image-container {
-  position: relative;
-  width: 300px; /* 或根据您的具体需求设置宽度 */
-  height: 200px; /* 或根据您的具体需求设置高度 */
-  overflow: hidden;
-}
-
-.image-container img {
-  width: 100%;
-  height: auto;
-  display: block; /* 去除底部间隙 */
-  transition: opacity 0.3s ease-in-out;
-}
-
-.image-container .caption {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.7); /* 半透明黑色背景 */
-  color: white;
+.caption{
+  font-size: 13px;
+  font-weight: bold;
   text-align: center;
-  padding: 10px 0;
-  opacity: 0; /* 初始不显示标题 */
-  transition: opacity 0.3s ease-in-out;
-  font-family: "Inconsolata", monospace;
-  font-size: 14px;
+  margin-bottom: 2rem;
+  color:black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
-.image-container:hover img {
-  opacity: 0.5; /* 图片半透明 */
-}
 
-.image-container:hover .caption {
-  opacity: 1; /* 显示标题 */
-}
+
 
 footer{
   text-align: center;
@@ -278,5 +264,9 @@ footer{
       display: none; /* 在桌面视图隐藏全屏下拉菜单 */
   }
 }
+
+
+
+
 
 
