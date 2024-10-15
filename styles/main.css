@@ -233,7 +233,10 @@ figure{
   font-style: normal;
 }
 
-
+#stem{
+  width:150%;
+  margin-left: 0rem;
+}
 
 
 footer{
