@@ -148,6 +148,7 @@ figure{
   height: auto;
   transition: transform 0.3s ease-in-out; 
   transform-origin: center; 
+  /* border: solid, 1px, black; */
 }
 
 .images:hover {
@@ -224,7 +225,7 @@ figure{
 }
 
 .caption{
-  font-size: 13px;
+  font-size: 14px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 2rem;
